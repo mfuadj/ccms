@@ -51,6 +51,15 @@ defaults:
       type: "tabs"
     values:
       layout: page
+      
+avatar: '/assets/img/avatar.jpg'
+social:
+  name: 'Your Name'
+  email: 'your-email@example.com'
+  links:
+    - https://github.com/mfuadj
+theme_mode: auto
+
 
 
 
