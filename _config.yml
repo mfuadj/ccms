@@ -99,3 +99,25 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
+
+  # Add these sections to your existing _config.yml
+
+# Jekyll Archives (needed for tag pages)
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+# Add jekyll-archives to your plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-archives  # ADD THIS LINE
+
