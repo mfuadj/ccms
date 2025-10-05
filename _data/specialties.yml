@@ -1,14 +1,41 @@
 cardiology:
   name: "Cardiology"
-  icon: "fas fa-heart"
+  full_name: "Cardiovascular Medicine"
+  icon: "fas fa-heartbeat"
   color: "#e74c3c"
+  description: "Heart and cardiovascular system disorders"
   
 endocrinology:
   name: "Endocrinology"
+  full_name: "Endocrinology & Metabolism"
   icon: "fas fa-prescription-bottle-alt"
   color: "#3498db"
+  description: "Hormonal and metabolic disorders"
   
+general_practice:
+  name: "General Practice"
+  full_name: "Family Medicine & Primary Care"
+  icon: "fas fa-user-md"
+  color: "#27ae60"
+  description: "Comprehensive primary healthcare"
+
 emergency:
   name: "Emergency Medicine"
+  full_name: "Emergency & Acute Care"
   icon: "fas fa-ambulance"
   color: "#e67e22"
+  description: "Emergency and critical care"
+
+respiratory:
+  name: "Respiratory Medicine"
+  full_name: "Pulmonology"
+  icon: "fas fa-lungs"
+  color: "#9b59b6"
+  description: "Lung and respiratory disorders"
+
+gastroenterology:
+  name: "Gastroenterology"
+  full_name: "Digestive System Medicine"
+  icon: "fas fa-stomach"
+  color: "#f39c12"
+  description: "Digestive system disorders"
