@@ -4,7 +4,7 @@ specialty_key: "general_practice"
 urgency: "high"
 last_updated: 2025-10-05
 categories: [infection-control, safety]
-tags: [hygiene, ppe, sterilization, prevention]
+tags: [setup, hygiene, ppe, sterilization, prevention]
 author: "Dr. Fuad Jaafar"
 description: "Standard infection control procedures for clinical practice"
 ---
