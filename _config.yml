@@ -28,6 +28,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  tabs:                      # <- add this block
+    output: true
+    permalink: /:collection/:name/
 
 defaults:
   - scope:
@@ -36,6 +39,7 @@ defaults:
     values:
       layout: page
       author: Admin
+
 
 
 
