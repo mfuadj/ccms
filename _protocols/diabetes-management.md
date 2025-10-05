@@ -1,6 +1,6 @@
 ---
 title: "Diabetes Management Protocol"
-specialty: "Endocrinology"
+specialty_key: "endocrinology"
 urgency: "routine"
 last_updated: 2025-10-05
 categories: [endocrinology, chronic-care]
@@ -13,6 +13,8 @@ description: "Comprehensive protocol for managing Type 2 Diabetes Mellitus in pr
 
 ## Overview
 This protocol outlines the systematic approach to managing Type 2 Diabetes Mellitus in primary care settings.
+
+**Specialty:** {{ site.data.specialties[page.specialty_key].full_name }}
 
 ## Initial Assessment
 
