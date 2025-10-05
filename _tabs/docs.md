@@ -1,15 +1,14 @@
 ---
 layout: page
-title: Docs
+title: Documentation
 icon: fas fa-book
 order: 1
 ---
-
-# Docs
-
-{% assign docs = site.pages | where_exp: "p", "p.path contains 'pages/'" %}
+{% assign items = site.pages
+  | where_exp: "p", "p.path contains 'pages/docs/' and p.name != 'index.md'"
+  | sort: "title" %}
 <ul>
-{% for p in docs %}
+{% for p in items %}
   <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
 {% endfor %}
 </ul>
