@@ -1,14 +1,14 @@
 ---
-title: "Blood Pressure Measurement"
-specialty: "General Practice"
+title: "Blood Pressure Measurement Procedure"
+specialty_key: "general_practice"
 urgency: "routine"
 last_updated: 2025-10-05
 categories: [vital-signs, assessment]
-tags: [blood-pressure, vital-signs, hypertension, measurement-technique]
+tags: [blood-pressure, vital-signs, measurement, technique]
 author: "Dr. Fuad Jaafar"
-description: "Standardized procedure for accurate blood pressure measurement"
-equipment_needed: ["Sphygmomanometer", "Stethoscope", "Appropriate cuff sizes"]
+description: "Step-by-step procedure for accurate blood pressure measurement"
 ---
+
 
 # Blood Pressure Measurement Procedure
 
