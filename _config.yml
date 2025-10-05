@@ -1,66 +1,20 @@
 # Site settings
 title: CCMS Wiki Docs
 tagline: Clean docs with Chirpy + Decap CMS
-description: >-
+description: >
   Medical documentation and clinical protocols powered by Jekyll Chirpy and Decap CMS.
 lang: en
 timezone: Asia/Kuala_Lumpur
 
-# For a GitHub Project Pages site:
+# URL settings
 url: "https://mfuadj.github.io"
 baseurl: "/ccms"
 
 # Theme
 theme: jekyll-theme-chirpy
 
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added in front of all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-img_cdn:
-
-# the avatar on sidebar, support local or CORS resources
+# Avatar
 avatar: '/assets/img/avatar.jpg'
-
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
-
-# boolean type, the global switch for TOC in posts.
-toc: true
-
-# Comments system
-comments:
-  active: false  # The global switch for posts comments
-
-# Self-hosted static assets
-assets:
-  self_host:
-    enabled: false
-    env: # [development|production]
-
-# Progressive Web Apps (PWA)
-pwa:
-  enabled: false
-
-# Page views
-paginate: 10
-paginate_path: /page:num/
-
-# Site Verification Settings
-google_site_verification:
-bing_site_verification:
-yandex_site_verification:
-baidu_site_verification:
-
-# Google Analytics
-google_analytics:
-  id: # fill in your Google Analytics ID
-
-# Goat Counter Analytics
-goatcounter:
-  id: # fill in your Goat Counter ID
 
 # Social settings
 social:
@@ -69,155 +23,118 @@ social:
   links:
     - https://github.com/mfuadj
 
-# Theme mode
-theme_mode: auto # [light|dark|auto]
+# Theme settings
+theme_mode: auto
+toc: true
 
-# CDN settings
-cdn: # The CDN endpoint for Jekyll resources
+# Comments
+comments:
+  active: false
 
-# Markdown settings
+# PWA
+pwa:
+  enabled: false
+
+# Pagination
+paginate: 10
+
+# Markdown
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
 
-# Permalink settings
+# Permalinks
 permalink: pretty
 
-# Collections for medical documentation
+# Collections
 collections:
   protocols:
     output: true
     permalink: /protocols/:name/
-    sort_by: specialty
   guidelines:
     output: true
     permalink: /guidelines/:name/
-    sort_by: last_updated
   procedures:
     output: true
     permalink: /procedures/:name/
-    sort_by: specialty
   medications:
     output: true
     permalink: /medications/:name/
-    sort_by: drug_class
   references:
     output: true
     permalink: /references/:name/
-    sort_by: category
   pages:
     output: true
     permalink: /:path/
   tabs:
     output: true
 
-# Default front matter
+# Defaults
 defaults:
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: post
       comments: false
       toc: true
-      permalink: /posts/:title/
       author: "Dr. Fuad Jaafar"
   - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ''
+      path: ""
       type: tabs
     values:
       layout: page
-      permalink: /:title/
-  - scope:
-      path: assets/img/favicons
-    values:
-      swcache: true
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
   - scope:
       path: "_protocols"
-      type: "protocols"
+      type: protocols
     values:
       layout: page
       author: "Dr. Fuad Jaafar"
       toc: true
   - scope:
       path: "_guidelines"
-      type: "guidelines"
+      type: guidelines
     values:
       layout: page
       author: "Dr. Fuad Jaafar"
       toc: true
   - scope:
       path: "_procedures"
-      type: "procedures"
+      type: procedures
     values:
       layout: page
       author: "Dr. Fuad Jaafar"
       toc: true
   - scope:
       path: "_medications"
-      type: "medications"
+      type: medications
     values:
       layout: page
       author: "Dr. Fuad Jaafar"
       toc: true
   - scope:
       path: "_references"
-      type: "references"
+      type: references
     values:
       layout: page
       author: "Dr. Fuad Jaafar"
       toc: true
   - scope:
-      path: "pages"
-      type: "pages"
+      path: pages
+      type: pages
     values:
       layout: page
       author: "Dr. Fuad Jaafar"
 
-# Required plugins
+# Plugins - SIMPLIFIED TO AVOID CONFLICTS
 plugins:
-  - jekyll-theme-chirpy
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-archives
-  - jekyll-sitemap
   - jekyll-include-cache
 
-# Jekyll Archives
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
-
-# Compress HTML
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
-  # ignore:
-  #   envs: [development]
+# Exclude files
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - LICENSE
+  - package*.json
