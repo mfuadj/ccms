@@ -1,8 +1,8 @@
 ---
 layout: page
-title: FAQ & Guide
+title: "FAQ & Guide"        # <-- & must be quoted in YAML
 icon: fas fa-question-circle
-order: 2
+order: 3
 ---
 
 {% assign items = site.pages
