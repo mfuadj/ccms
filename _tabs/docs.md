@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Documentation
+title: Docs
 icon: fas fa-book
 order: 1
 ---
