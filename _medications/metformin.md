@@ -1,15 +1,15 @@
 ---
 title: "Metformin"
-generic_name: "Metformin Hydrochloride"
-brand_names: ["Glucophage", "Diabex", "Diaformin"]
-drug_class: "Biguanide Antidiabetic"
-therapeutic_class: "Antihyperglycemic Agent"
+specialty_key: "endocrinology"
+drug_class: "Biguanide"
+urgency: "routine"
 last_updated: 2025-10-05
-categories: [oral-medication, diabetes]
-tags: [diabetes, metformin, first-line, oral-hypoglycemic]
+categories: [diabetes, oral-medication]
+tags: [metformin, diabetes, first-line, oral-medication]
 author: "Dr. Fuad Jaafar"
-description: "First-line oral antidiabetic medication for Type 2 Diabetes Mellitus"
+description: "Clinical information and prescribing guidelines for Metformin"
 ---
+
 
 # Metformin (Metformin Hydrochloride)
 
