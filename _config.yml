@@ -40,6 +40,13 @@ defaults:
       layout: page
       author: Admin
 
+  - scope:
+      path: ""        # applies to all posts
+      type: "posts"
+    values:
+      layout: post
+
+
 
 
 
