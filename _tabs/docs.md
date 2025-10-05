@@ -2,11 +2,12 @@
 layout: page
 title: Docs
 icon: fas fa-book
-order: 1
+order: 2
 ---
-{% assign items = site.pages
+
+{% assign items = site.collections['pages'].docs
   | where_exp: "p", "p.path contains 'pages/docs/' and p.name != 'index.md'"
-  | sort: "title" %}
+  | sort: "nav_order" | sort: "title" %}
 <ul>
 {% for p in items %}
   <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
