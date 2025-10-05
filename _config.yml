@@ -6,7 +6,7 @@ timezone: Asia/Kuala_Lumpur
 
 # For a GitHub Project Pages site:
 url: "https://mfuadj.github.io"   # ← change
-baseurl: "/ccms"                          # ← keep as /CCMS (repo name)
+baseurl: "/ccms-wiki"                          # ← keep as /CCMS (repo name)
 
 theme: jekyll-theme-chirpy
 
@@ -36,4 +36,5 @@ defaults:
     values:
       layout: page
       author: Admin
+
 
