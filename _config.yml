@@ -1,4 +1,4 @@
-title: CCMS Docs
+title: CCMS Wiki Docs
 tagline: Clean docs with Chirpy + Decap CMS
 description: Documentation powered by Jekyll Chirpy and Decap CMS.
 lang: en
@@ -36,5 +36,6 @@ defaults:
     values:
       layout: page
       author: Admin
+
 
 
