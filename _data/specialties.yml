@@ -1,0 +1,14 @@
+cardiology:
+  name: "Cardiology"
+  icon: "fas fa-heart"
+  color: "#e74c3c"
+  
+endocrinology:
+  name: "Endocrinology"
+  icon: "fas fa-prescription-bottle-alt"
+  color: "#3498db"
+  
+emergency:
+  name: "Emergency Medicine"
+  icon: "fas fa-ambulance"
+  color: "#e67e22"
