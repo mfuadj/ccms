@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: mfuadj/ccms-wiki       # ← change
+  repo: mfuadj/ccms       # ← change
   branch: main
   # Use Netlify Identity + Git Gateway for auth (even if hosting on GitHub Pages)
   base_url: https://api.netlify.com
@@ -33,5 +33,6 @@ collections:
       - { label: "Order", name: "nav_order", widget: "number", required: false }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
 
 
