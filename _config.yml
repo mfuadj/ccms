@@ -1,91 +1,33 @@
-# Site settings
 title: CCMS Wiki Docs
 tagline: Clean docs with Chirpy + Decap CMS
-description: >-
-  Medical documentation and clinical protocols powered by Jekyll Chirpy and Decap CMS.
+description: Medical documentation and clinical protocols powered by Jekyll Chirpy and Decap CMS.
 lang: en
 timezone: Asia/Kuala_Lumpur
 
-# For a GitHub Project Pages site:
 url: "https://mfuadj.github.io"
 baseurl: "/ccms"
 
-# Theme
 theme: jekyll-theme-chirpy
 
-# The CDN endpoint for images.
-img_cdn:
-
-# Sidebar avatar (make sure this file exists)
-avatar: '/assets/img/avatar.jpg'
-
-social_preview_image:
-
-# Global TOC
+avatar: /assets/img/avatar.jpg
 toc: true
 
-# Comments system
 comments:
   active: false
 
-# Self-hosted static assets
-assets:
-  self_host:
-    enabled: false
-
-# PWA
-pwa:
-  enabled: false
-
-# Pagination
 paginate: 10
 paginate_path: /page:num/
 
-# Site Verification
-google_site_verification:
-bing_site_verification:
-yandex_site_verification:
-baidu_site_verification:
-
-# Google Analytics
-google_analytics:
-  id:
-
-# Goat Counter
-goatcounter:
-  id:
-
-# Social settings (CORRECTED SYNTAX)
-social:
-  name: Dr. Fuad Jaafar
-  email: fuad@example.com
-  links:
-    - https://github.com/mfuadj
-
-# Theme mode
-theme_mode: auto
-
-# CDN for Jekyll resources
-cdn:
-
-# Markdown
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: highlight
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
 
-# Permalinks
 permalink: pretty
 
-# Collections (keep only what you actually use)
 collections:
+  tabs:
+    output: true
   protocols:
     output: true
     permalink: /protocols/:name/
@@ -101,75 +43,48 @@ collections:
   references:
     output: true
     permalink: /references/:name/
-  tabs:
-    output: true
 
-# Defaults
 defaults:
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: post
-      comments: false
       toc: true
       permalink: /posts/:title/
       author: "Dr. Fuad Jaafar"
   - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ''
+      path: ""
       type: tabs
     values:
       layout: page
-      permalink: /:title/
-  - scope:
-      path: assets/img/favicons
-    values:
-      swcache: true
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
+      permalink: "/:title/"
   - scope:
       path: "_protocols"
       type: "protocols"
     values:
       layout: page
-      author: "Dr. Fuad Jaafar"
-      toc: true
   - scope:
       path: "_guidelines"
       type: "guidelines"
     values:
       layout: page
-      author: "Dr. Fuad Jaafar"
-      toc: true
   - scope:
       path: "_procedures"
       type: "procedures"
     values:
       layout: page
-      author: "Dr. Fuad Jaafar"
-      toc: true
   - scope:
       path: "_medications"
       type: "medications"
     values:
       layout: page
-      author: "Dr. Fuad Jaafar"
-      toc: true
   - scope:
       path: "_references"
       type: "references"
     values:
       layout: page
-      author: "Dr. Fuad Jaafar"
-      toc: true
 
-# Plugins — DO NOT list the theme here
 plugins:
   - jekyll-paginate
   - jekyll-redirect-from
@@ -177,10 +92,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-# HTML compression
 compress_html:
-  clippings: all
   comments: all
+  clippings: all
   endings: all
   startings: []
   blanklines: false
