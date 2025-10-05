@@ -1,0 +1,38 @@
+title: CCMS Docs
+tagline: Clean docs with Chirpy + Decap CMS
+description: Documentation powered by Jekyll Chirpy and Decap CMS.
+lang: en
+timezone: Asia/Kuala_Lumpur
+
+# For a GitHub Project Pages site:
+url: "https://mfuadj.github.io"   # ← change
+baseurl: "/CCMS"                          # ← keep as /CCMS (repo name)
+
+theme: jekyll-theme-chirpy
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+paginate: 10
+paginate_path: /page:num/
+toc: true
+toc_sticky: true
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-include-cache
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: page
+      author: Admin

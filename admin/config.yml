@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: mfuadj/CCMS        # ← change
+  branch: main
+  # Use Netlify Identity + Git Gateway for auth (even if hosting on GitHub Pages)
+  base_url: https://api.netlify.com
+  auth_endpoint: /auth
+  open_authoring: false
+
+media_folder: "assets/uploads"     # where files are saved in repo
+public_folder: "/assets/uploads"   # how files are referenced in site
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Categories", name: "categories", widget: "list", default: ["Guide"] }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    folder: "pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Order", name: "nav_order", widget: "number", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
