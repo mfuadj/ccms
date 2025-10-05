@@ -1,0 +1,35 @@
+.specialty-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.specialty-badge i {
+  margin-right: 5px;
+}
+
+.protocol-card, .guideline-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 2px 8px;
+  margin: 2px 4px 2px 0;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
