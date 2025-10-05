@@ -1,11 +1,22 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.3"
+# (Optional) declare Ruby used in Actions and locally
+# ruby "~> 3.2"
+
+gem "jekyll", "~> 4.3"
 gem "jekyll-theme-chirpy", "~> 7.3"
-gem "webrick", "~> 1.8" # for local `jekyll serve` on Ruby 3+
 
 group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
   gem "jekyll-include-cache"
+  # gem "jekyll-archives" # Only if you add the archive layouts back in
+end
+
+group :development do
+  gem "webrick", "~> 1.8" # for `bundle exec jekyll serve` on Ruby 3+
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
