@@ -28,7 +28,7 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  tabs:                      # <- add this block
+  tabs:
     output: true
     permalink: /:collection/:name/
 
@@ -41,10 +41,18 @@ defaults:
       author: Admin
 
   - scope:
-      path: ""        # applies to all posts
+      path: ""          # all posts
       type: "posts"
     values:
       layout: post
+
+  - scope:
+      path: ""          # all tabs (files in _tabs/)
+      type: "tabs"
+    values:
+      layout: page
+
+
 
 
 
