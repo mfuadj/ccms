@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Clinical Protocols
+title: Protocols
 permalink: /protocols/
 order: 2
 ---
