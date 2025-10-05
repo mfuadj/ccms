@@ -1,12 +1,12 @@
 ---
 title: "Infection Control Guidelines"
-specialty: "General Practice"
+specialty_key: "general_practice"
 urgency: "high"
 last_updated: 2025-10-05
-categories: [safety, prevention]
-tags: [infection-control, hand-hygiene, PPE, sterilization]
+categories: [infection-control, safety]
+tags: [hygiene, ppe, sterilization, prevention]
 author: "Dr. Fuad Jaafar"
-description: "Standard infection prevention and control measures for clinic settings"
+description: "Standard infection control procedures for clinical practice"
 ---
 
 # Infection Control Guidelines
